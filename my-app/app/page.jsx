@@ -15,7 +15,7 @@ const page = () => {
         </div>
 
         <div className={styles.textContent}>
-          <a href='/Work'>WORKS</a>
+          <a href='/Work'>W O R K S</a>
           <h1>We create elegant and functional <br></br>custom-designed websites</h1>
         </div>
 
@@ -27,14 +27,14 @@ const page = () => {
           <div className={styles.toggle}><a href="/Navbar">☰</a></div>
           <Image src={vision} alt="" className={styles.sectionImage} />
           <div className={styles.textContainer}>
-            <a href='/Vision'>Vision</a>
+            <a href='/Vision'>V I S I O N</a>
             <h2 className={styles.desc}>We approach projects with one clear vision</h2>
           </div>
         </div>
         <div className={`${styles.section} ${styles.studio}`}>
           <Image src={studio} alt="" className={styles.sectionImage} />
           <div className={styles.textContainer}>
-            <a href='/Studio'>Studio</a>
+            <a href='/Studio'>S T U D I O</a>
             <h2 className={styles.desc}>Our fine studio of two knows the value of hard work</h2>
           </div>
         </div>
