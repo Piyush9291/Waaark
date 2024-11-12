@@ -1,0 +1,142 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.leftSection,
+.rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.leftSection {
+    background-color: #f98484;
+}
+
+
+.nav{
+    display: flex;
+}
+
+.logo a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.title {
+    font-size: 16px;
+    color: rgb(48, 63, 128);
+    line-height: 17px;
+    font-weight: 700;
+    font-family: sofia-pro, sans-serif;
+}
+
+.email {
+    font-size: 50px;
+    line-height: 50px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: "Playfair Display", serif;
+}
+
+.social{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    font-family:sofia-pro, sans-serif ;
+    gap: 20px;
+}
+
+.rightSection {
+    position: relative;
+    background-color: #F99797;
+}
+
+.toggle a {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px;
+    width: 30px;  
+    height: 30px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.navlinks {
+    background-color: #F99797;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.navlinks a{
+    text-decoration: none;
+}
+
+.navlinks li {
+    font-size: 50px;
+    color: white;
+    line-height: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+.navlinks .work{
+    text-decoration: line-through;
+    color: #f98484;
+}
+
+
+ 
+@media (max-width: 764px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .contact{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .email {
+        font-size: 30px;
+        line-height: 30px;
+        color: white;
+        font-weight: 400;
+        cursor: pointer;
+        font-family: "Playfair Display", serif;
+    }
+
+    .navlinks {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navlinks li {
+        font-size: 30px;
+        color: white;
+        line-height: 30px;
+        font-family: "Playfair Display", serif;
+    }
+}
