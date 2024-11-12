@@ -1,6 +1,7 @@
 
 import React  from 'react'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -17,7 +18,13 @@ const Navbar = () => {
   
         <div className={styles.rightSection}>
           <div className={styles.navigation}>
-          <div className={styles.toggle}><a href="/">☰</a></div>
+          <Link href="/">
+          <div className={styles.toggle} >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          </Link>
             <p className={styles.title}>N A V I G A T I O N</p>
             <ul className={styles.navlinks}>
              <a href="/Vision"> <li>Vision</li></a>

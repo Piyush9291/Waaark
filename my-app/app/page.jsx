@@ -3,6 +3,8 @@ import styles from './page.module.css'
 import vision from '../public/Vision.svg'
 import studio from '../public/Studio.svg'
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 
 const page = () => {
@@ -24,7 +26,13 @@ const page = () => {
 
       <section className={`${styles.rightContent} ${styles.border}`}>
         <div className={`${styles.section} ${styles.vision}`}>
-          <div className={styles.toggle}><a href="/Navbar">☰</a></div>
+          <Link href="/Navbar">
+          <div className={styles.toggle} >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          </Link>
           <Image src={vision} alt="" className={styles.sectionImage} />
           <div className={styles.textContainer}>
             <a href='/Vision'>V I S I O N</a>

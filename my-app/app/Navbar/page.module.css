@@ -40,6 +40,7 @@
     line-height: 17px;
     font-weight: 700;
     font-family: sofia-pro, sans-serif;
+    margin-bottom: 20px;
 }
 
 .email {
@@ -49,6 +50,11 @@
     font-weight: 400;
     cursor: pointer;
     font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
+}
+
+.email:hover{
+    color: #263366;
 }
 
 .social{
@@ -60,27 +66,37 @@
     gap: 20px;
 }
 
+.social:hover{
+  color: red;
+}
+
 .rightSection {
     position: relative;
     background-color: #F99797;
 }
 
-.toggle a {
+.toggle {
     position: absolute;
     right: 2rem;
     top: 1.5rem;
-    font-size: 26px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+    width: 40px;
+    height: 40px;
     background-color: white;
-    padding: 15px;
-    width: 30px;  
-    height: 30px; 
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .toggle span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
   }
 
 .navlinks {
@@ -100,7 +116,13 @@
     color: white;
     line-height: 50px;
     font-family: "Playfair Display", serif;
+    margin-bottom: 10px;
 }
+
+.navlinks :hover {
+    color: #263366;
+  }
+  
 
 .navlinks .work{
     text-decoration: line-through;

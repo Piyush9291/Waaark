@@ -1,4 +1,5 @@
 
+
 .container {
     height: 100vh;
     display: flex;
@@ -13,7 +14,7 @@
     padding: 20px;
 }
 
-.logo a{
+.logo a {
     position: absolute;
     left: 2rem;
     top: 2.5rem;
@@ -21,32 +22,54 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
- }
- 
- .toggle a {
-     position: absolute;
-     right: 2rem;
-     top: 2rem;
-     font-size: 26px;
-     text-decoration: none;
-     color: black;
-     font-weight: bold;
-     background-color: white;
-     padding: 15px;
-     width: 30px;  
-     height: 30px; 
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
+}
+
+.toggle {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.toggle span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+.contact {
+    position: absolute;
+    right: 1rem;
+    top: 4rem; 
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: sofia-pro, sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Remaining styles unchanged */
+
 
 .content {
     position: relative;
     z-index: 2;
     max-width: 600px;
     animation: move 3s infinite ease alternate;
-
 }
 
 @keyframes move{
@@ -55,7 +78,6 @@
         transform: translateY(-15px);
     }
 }
-
 
 .title {
     font-size: 1rem;
@@ -85,6 +107,7 @@
     justify-content: space-evenly;
     gap: 20px; 
     flex-wrap: wrap; 
+    padding: 50px 0px;
 }
 
 
@@ -131,38 +154,45 @@ font-family: sofia-pro, sans-serif;
 
 .Analysis{
   background-color: #F76C6C;
+  padding: 50px 0px;
 }
 
 .Contact{
     background-color: #FAABAB;
-    padding: 30px;
     color: white;
+    padding: 50px 0px;
 }
 
 .Wireframe{
     background-color:#7CCCBE;
     color: white;
+    padding: 50px 0px;
 }
 
 .Design{
     background-color: #97C2D9;
     color: white;
+    padding: 50px 0px;
 }
 .Development{
     background-color:#B1C0CB;
     color: white;
+    padding: 50px 0px;
 }
 .Animation{
     background-color: #70D1AA;
     color: white;
+    padding: 50px 0px;
 }
 .Test{
     background-color: #403D66;
     color: white;
+    padding: 50px 0px;
 }
 .Followup{
     background-color:#4E61BD;
     color: white;
+    padding: 50px 0px;
 }
 
 
@@ -200,6 +230,7 @@ font-family: sofia-pro, sans-serif;
 
     .container{
         text-align: center;
+        width: 100%;
     }
     .process {
         flex-direction: column;

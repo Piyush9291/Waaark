@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './page.module.css'
+import Link from 'next/link';
 const Vision = () => {
   return (
     <div>
@@ -7,9 +8,16 @@ const Vision = () => {
     <div className={styles.logo}>
       <a href="/">Wrk..</a>
     </div>
-    <div className={styles.toggle}>
-      <a href="/Navbar">☰</a>
-    </div>
+    <Link href="/Navbar">
+          <div className={styles.toggle}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </Link>
+        
+        <a className={styles.contact} href='/Contact'>CONTACT</a>
+
       <div className={styles.content}>
         <p className={styles.title}>V I S I O N</p>
         <h1 className={styles.text}>
@@ -104,6 +112,7 @@ const Vision = () => {
         </p>
         </div>
       </div>
+      </div>
 
       <div className={styles.Animation}>
         <div className={styles.process}>
@@ -119,6 +128,7 @@ const Vision = () => {
             users on a completely different level.
           </p>
           </div>
+        </div>
         </div>
 
         <div className={styles.Test}>
@@ -154,9 +164,7 @@ const Vision = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
-   </div>
   );
 };
 
