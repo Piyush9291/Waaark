@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
+import Link from 'next/link';
+
 
 const Studio = () => {
    return (
@@ -9,9 +11,13 @@ const Studio = () => {
             <div className={styles.logo}>
                <a href="/">Wrk..</a>
             </div>
-            <div className={styles.toggle}>
-               <a href="/Navbar">☰</a>
-            </div>
+            <Link href="/Navbar">
+          <div className={styles.toggle}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </Link>
             <div className={styles.content}>
                <p className={styles.title}>S T U D I O</p>
                <h1 className={styles.text}>

@@ -15,9 +15,7 @@ const Vision = () => {
             <span></span>
           </div>
         </Link>
-        
         <a className={styles.contact} href='/Contact'>CONTACT</a>
-
       <div className={styles.content}>
         <p className={styles.title}>V I S I O N</p>
         <h1 className={styles.text}>
